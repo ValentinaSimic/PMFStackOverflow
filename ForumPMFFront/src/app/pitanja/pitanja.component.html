@@ -1,0 +1,14 @@
+<br>
+<div class="row">
+        <div *ngFor="let pitanje of pitanja" class="col-11" >
+                <div class="jumbotron">
+                        <h1 class="display-36">{{pitanje.naslovPitanje}}</h1>
+                        <hr class="my-4">
+                        <h5>Datum postavljanja: {{pitanje.datumPitanje | date }}</h5>
+                        <h5>Postavio: {{pitanje.postavioPitanje}}</h5> 
+                        <button type="button" class="btn btn-primary" data-toggle="modal" [routerLink]="['/pitanje/' + pitanje.id]" routerLinkActive="router-link-active" >
+                            Vidi vise
+                          </button> 
+                      </div>
+        </div>
+    </div>

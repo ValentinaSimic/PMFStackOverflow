@@ -1,0 +1,11 @@
+<div class="card my-4">
+        <h5 class="card-header">Pretraga</h5>
+        <div class="card-body">
+          <div class="input-group">
+            <input type="text" class="form-control" [(ngModel)]="pretragaPitanje" name="pretragaPitanje" placeholder="Zelite odgovor na...">
+            <span class="input-group-btn">
+              <button [routerLink]="['/pitanje/pretraga/',pretragaPitanje]" class="btn btn-secondary" type="button">Pretrazi</button>
+            </span>
+          </div>
+        </div>
+      </div>

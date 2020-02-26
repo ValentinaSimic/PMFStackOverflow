@@ -1,0 +1,75 @@
+package forum.model;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection="studentPMF")
+public class Student {
+	
+	@Id
+	private String id;
+	private String ime;
+	private String prezime;
+	private String korisnickoIme;
+	private String brojIndexa;
+	private String sifra;
+	private String smer;
+	private int brOdgovora;
+	private int brPitanja;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getIme() {
+		return ime;
+	}
+	public void setIme(String ime) {
+		this.ime = ime;
+	}
+	public String getPrezime() {
+		return prezime;
+	}
+	public void setPrezime(String prezime) {
+		this.prezime = prezime;
+	}
+	public String getKorisnickoIme() {
+		return korisnickoIme;
+	}
+	public void setKorisnickoIme(String korisnickoIme) {
+		this.korisnickoIme = korisnickoIme;
+	}
+	public String getBrojIndexa() {
+		return brojIndexa;
+	}
+	public void setBrojIndexa(String brojIndexa) {
+		this.brojIndexa = brojIndexa;
+	}
+	public String getSifra() {
+		return sifra;
+	}
+	public void setSifra(String sifra) {
+		this.sifra = sifra;
+	}
+	public String getSmer() {
+		return smer;
+	}
+	public void setSmer(String smer) {
+		this.smer = smer;
+	}
+	public int getBrOdgovora() {
+		return brOdgovora;
+	}
+	public void setBrOdgovora(int brOdgovora) {
+		this.brOdgovora = brOdgovora;
+	}
+	public int getBrPitanja() {
+		return brPitanja;
+	}
+	public void setBrPitanja(int brPitanja) {
+		this.brPitanja = brPitanja;
+	}
+	
+	
+}

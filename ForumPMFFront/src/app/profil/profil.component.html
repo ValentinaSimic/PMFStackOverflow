@@ -1,0 +1,90 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<div class="container emp-profile">
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-img">
+                            <img src="assets/Images/nikola11.jpg" alt=""/>
+                            <div class="file btn btn-lg btn-primary">
+                                Promeni sliku
+                                <input type="file" (change)="onFileSelected($event)"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="profile-head">
+                                
+                                    <h3>
+                                        Student: {{ime}} {{prezime}}
+                                    </h3>
+                                    <p class="proile-rating">Smer: <span><h5>{{smer}}</h5></span></p>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">O studentu</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Ime</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{ime}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Prezime</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{prezime}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Broj index-a</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{brojIndexa}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Username</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{username}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Password</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p><input type="text" ></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button (click)="onUpload()" type="button" class="btn btn-primary">Azuriraj podatke</button>
+                                            </div>
+                                        </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>           
+        </div>

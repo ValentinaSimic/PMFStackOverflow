@@ -1,0 +1,5 @@
+package forum.controller;
+
+public class StudentController {
+
+}
