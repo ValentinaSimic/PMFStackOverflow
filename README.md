@@ -24,14 +24,14 @@ The motivation for this application is due to the long use of the Stack site and
 * Angular 8
 * HTML5
 * CSS
-* Boostrap- ready-made templates for use.
+* Bootstrap- ready-made templates for use.
 * Java, Spring Boot framework-it was used to implement business logic and Spring Security-which was used to fully control       access to the application.
 * MongodDB- Database is located locally on the computer, NoSql Booster was used for the work.
 
 
 ## Functionality
 The user logs in, the data is checked, and the role that the user has is loaded from the database. Jwt token was used for authentication. The appearance and functionality of the application are different for different roles.
-Student can ask questions, ask questions, or answers. Search is possible through courses or through keywords. Each student has an insight into their profile. Admin has insight into all users and adds new users.
+Student can ask questions or answers. Search is possible through courses or through keywords. Each student has an insight into their profile. Admin has insight into all users and adds new users.
 
 ## Status
 Project is: _finished_
