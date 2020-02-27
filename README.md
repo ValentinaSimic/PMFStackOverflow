@@ -16,7 +16,7 @@ The application represents a StackOverflow forum at the faculty level.
 The motivation for this application is due to the long use of the Stack site and the idea of making it easier for beginners to enter the programming world.
 
 ## Demo
-![Example screenshot](./demo/PMFFORUM.jpg) 
+![Example screenshot](./demo/PMFFORUM.gif) 
 
 
 
