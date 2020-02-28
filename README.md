@@ -8,7 +8,7 @@
 * [Technologies](#technologies)
 * [Functionality](#functionality)
 * [Status](#status)
-* [Run Locally](#run-locally)
+
 
 
 ## General info
@@ -16,7 +16,7 @@ The application represents a StackOverflow forum at the faculty level.
 The motivation for this application is due to the long use of the Stack site and the idea of making it easier for beginners to enter the programming world.
 
 ## Demo
-![Example screenshot](./demo/PMFORUM.gif) 
+![Example gif](./demo/PMFORUM.gif) 
 
 
 
@@ -35,9 +35,6 @@ Student can ask questions or answers. Search is possible through courses or thro
 
 ## Status
 Project is: _finished_
-
-## Run Locally
-
 
 
 ## Contact
