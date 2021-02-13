@@ -1,4 +1,4 @@
-# PMFForum - forum-app
+# PMForum - forum-app
 > Realization of a well-known StackOverflow forum at the local faculty level.
 
 ## Table of contents
