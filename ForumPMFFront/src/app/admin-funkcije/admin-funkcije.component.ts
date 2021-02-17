@@ -15,8 +15,7 @@ export class AdminFunkcijeComponent implements OnInit {
     private authService: LoginAuthService,
     private userService: UserService
   ) { 
-    this.authService.isLoggedIn();
-    
+    this.authService.isLoggedIn();  
   }
 
   ngOnInit() {
@@ -29,10 +28,9 @@ export class AdminFunkcijeComponent implements OnInit {
     console.log(file);
   }
 
-  dodajSliku(image){
-    this.userService.dodajSliku(image).subscribe((response)=>{
-      
-    })
-  }
+//   dodajSliku(image){
+//     this.userService.dodajSliku(image).subscribe((response)=>{ 
+//     })
+//   }
 
 }
