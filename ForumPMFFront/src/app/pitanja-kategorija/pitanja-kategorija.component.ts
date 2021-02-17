@@ -22,9 +22,6 @@ export class PitanjaKategorijaComponent implements OnInit {
     this.authService.isLoggedIn();
   }
 
-  
-
-
   ngOnInit() {
     this.kursId= this.route.snapshot.paramMap.get("kursId");
     this.userService.pretraziKurs(this.kursId)
