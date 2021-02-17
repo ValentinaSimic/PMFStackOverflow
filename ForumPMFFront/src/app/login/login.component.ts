@@ -23,7 +23,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
+  //shared service?
   loginUser(user: any){
     this.userService.loginUser(user).subscribe((response)=>{
       if(response.token){
