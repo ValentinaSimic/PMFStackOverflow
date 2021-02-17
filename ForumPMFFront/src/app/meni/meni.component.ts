@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class MeniComponent implements OnInit {
 
-  title = 'app';
+  public title = 'app';
   public currentstatus: any;
   public uloga;
   public student;
@@ -18,11 +18,9 @@ constructor(
   private authService: LoginAuthService,
   private router: Router
 ){
-  
   this.authService.isLoggedIn();
-  
   this.currentstatus= this.authService.getStatus().subscribe(currentstatus =>{
-    this.currentstatus=currentstatus;
+  this.currentstatus=currentstatus;
   })
   if(localStorage.getItem("student")==="USER"){
     this.student=true;
