@@ -12,8 +12,6 @@ export class PitanjaComponent implements OnInit {
   public pitanja;
   @Input() public pitanje;
 
-
-
   constructor(
     private userService: UserService,
     private route: ActivatedRoute,
@@ -26,8 +24,7 @@ export class PitanjaComponent implements OnInit {
       this.userService
           .pretraga(this.route.snapshot.paramMap.get("trazim"))
           .subscribe(response =>{
-            this.pitanja=response;
-            
+            this.pitanja=response; 
           });
       
     }else{
