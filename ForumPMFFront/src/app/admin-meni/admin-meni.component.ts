@@ -9,11 +9,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./admin-meni.component.css']
 })
 export class AdminMeniComponent implements OnInit {
-
+  
   public loginuser: any={};
   public users: any[];
   public user: any={};
-
 
   constructor(
     private authService: LoginAuthService,
