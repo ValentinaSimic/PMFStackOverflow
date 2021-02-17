@@ -11,19 +11,13 @@ export class KategorijeComponent implements OnInit {
   public kursevi;
   public nazivKursa;
   
-
   constructor(
     private userService: UserService,
-  ) { }
+  ){}
 
   ngOnInit() {
     this.userService.sviKursevi().subscribe(response => {
       this.kursevi=response;
     })
   }
-
-  
-
- 
-
 }
