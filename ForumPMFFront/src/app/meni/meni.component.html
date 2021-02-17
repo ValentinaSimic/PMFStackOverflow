@@ -3,18 +3,14 @@
 <head>
 </head>
 <body>
-
-<ul>
-  <li><a class="active" href="" *ngIf="!currentstatus.status">PMFORUM</a></li>
-  <li><a class="active" [routerLink]="['/korisnik-pogled']" *ngIf="currentstatus.status">PMFORUM</a></li>
-  <li><a href="javascrpit:void(0)" [routerLink]="['/onama']">O nama</a></li>
-  <li><a href="javascrpit:void(0)" [routerLink]="['/kontakt']">Kontakt</a></li>
-  <li style="float:right"><a href="javascrpit:void(0)" [routerLink]="['/login']" *ngIf="!currentstatus.status">Prijavi se</a></li>
-  <li style="float:right"><a href="javascrpit:void(0)" (click)="logout()" [routerLink]="['/logout']" *ngIf="currentstatus.status">Odjavi se</a></li>
-  <li style="float:right"><a href="javascrpit:void(0)" [routerLink]="['/profil']" *ngIf="student">Profil</a></li>  
-</ul>
-
-
-
+  <ul>
+   <li><a class="active" href="" *ngIf="!currentstatus.status">PMFORUM</a></li>
+    <li><a class="active" [routerLink]="['/korisnik-pogled']" *ngIf="currentstatus.status">PMFORUM</a></li>
+    <li><a href="javascrpit:void(0)" [routerLink]="['/onama']">O nama</a></li>
+    <li><a href="javascrpit:void(0)" [routerLink]="['/kontakt']">Kontakt</a></li>
+    <li style="float:right"><a href="javascrpit:void(0)" [routerLink]="['/login']" *ngIf="!currentstatus.status">Prijavi se</a></li>
+    <li style="float:right"><a href="javascrpit:void(0)" (click)="logout()" [routerLink]="['/logout']" *ngIf="currentstatus.status">Odjavi se</a></li>
+    <li style="float:right"><a href="javascrpit:void(0)" [routerLink]="['/profil']" *ngIf="student">Profil</a></li>  
+  </ul>
 </body>
 </html>
