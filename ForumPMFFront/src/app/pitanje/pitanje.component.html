@@ -1,41 +1,31 @@
-
- <h1 class="mt-4">{{pitanje.naslovPitanje}}</h1>
-
- <hr>
- Pitanje opsirnije:
-<br><br>
- <h5><b>{{pitanje.textPitanje}}</b></h5>
-
-
- <hr>
-
- <p class="lead">
-  Postavio: <b><u>{{pitanje.postavioPitanje}}</u></b>
-</p>
-
-
-Datum postavljanja: <b>{{pitanje.datumPitanje | date }}</b> 
+<h1 class="mt-4">{{pitanje.naslovPitanje}}</h1>
 <hr>
-
-
- <div class="card my-4">
-   <h5 class="card-header">Znas resenje?</h5>
-   <div class="card-body">
-     <form>
-       <div class="form-group">
-         <textarea [(ngModel)]="textOdg" name="textOdg"  id="textOdg" class="form-control" rows="3"></textarea>
-       </div>
-       <button type="button"  (click)="dodajO()" class="btn btn-primary">Odgovori</button>
-     </form>
-   </div>
- </div>
-
- <div *ngFor="let odgovor of pitanje.odgovori" class="media mb-4">
-   <img class="d-flex mr-3 rounded-circle" src="assets/Images/profil.png" alt="">
-   <div class="media-body">
-     <h5 class="mt-0">Postavljen od <b>{{odgovor.postavioOdg}}</b></h5>
-      <b> <h5>{{odgovor.textOdg}}</h5></b>
-   </div>
- </div>
-
- 
+Pitanje opsirnije:
+<br><br>
+<h5><b>{{pitanje.textPitanje}}</b></h5>
+<hr>
+<p class="lead">
+    Postavio: <b><u>{{pitanje.postavioPitanje}}</u></b>
+</p>
+Datum postavljanja: <b>{{pitanje.datumPitanje | date }}</b>
+<hr>
+<div class="card my-4">
+    <h5 class="card-header">Znas resenje?</h5>
+    <div class="card-body">
+        <form>
+            <div class="form-group">
+                <textarea [(ngModel)]="textOdg" name="textOdg" id="textOdg" class="form-control" rows="3"></textarea>
+            </div>
+            <button type="button" (click)="dodajO()" class="btn btn-primary">Odgovori</button>
+        </form>
+    </div>
+</div>
+<div *ngFor="let odgovor of pitanje.odgovori" class="media mb-4">
+    <img class="d-flex mr-3 rounded-circle" src="assets/Images/profil.png" alt="">
+    <div class="media-body">
+        <h5 class="mt-0">Postavljen od <b>{{odgovor.postavioOdg}}</b></h5>
+        <b>
+            <h5>{{odgovor.textOdg}}</h5>
+        </b>
+    </div>
+</div>
