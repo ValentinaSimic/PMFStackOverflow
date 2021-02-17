@@ -16,9 +16,7 @@ export class KorisnikPogledComponent implements OnInit {
     this.authService.isLoggedIn();
   }
 
-
-  ngOnInit() {
-    
+  ngOnInit() { 
   }
 
 }
