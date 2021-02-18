@@ -1,5 +1,5 @@
 # PMForum - forum-app
-> Realization of a well-known StackOverflow forum at the local faculty level.
+> Realization of a well-known Stack Overflow forum at the local faculty level.
 
 ## Table of contents
 * [General info](#general-info)
